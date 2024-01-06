@@ -41,7 +41,7 @@ export default function LoginScreen({ navigation }) {
         </View>
         <TouchableOpacity
           style={styles.loginButton}
-          // onPress={() => }
+          onPress={() => (navigation.navigate("Map"))}
         >
           <Text style={styles.loginText}>Login</Text>
         </TouchableOpacity>
@@ -50,6 +50,8 @@ export default function LoginScreen({ navigation }) {
     </View>
   )
 }
+
+console.log('hello')
 
 const styles = StyleSheet.create({
   container: {

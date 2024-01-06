@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import LoginScreen from './screens/LoginScreen';
 import SignupScreen from './screens/SignupScreen';
 import ForgotPassScreen from './screens/ForgotPassScreen';
+import MapScreen from './screens/MapScreen';
 
 const Stack = createStackNavigator();
 
@@ -15,8 +16,9 @@ export default function App() {
         screenOptions={{
           headerShown: false
         }}
-      >        
+      >
         <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Map" component={MapScreen} />        
         <Stack.Screen name="Signup" component={SignupScreen} />
         <Stack.Screen name="Forgot" component={ForgotPassScreen} />
       </Stack.Navigator>
